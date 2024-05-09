@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es6",
+    "outDir": "lib",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "serverless.ts", "./**/*.ts", "tests/utils"],
+  "exclude": [
+    "node_modules/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ],
+}

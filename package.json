@@ -1,0 +1,25 @@
+{
+  "name": "mentoria-lambdas",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sls offline start --host=0.0.0.0 --stage local --noAuth"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@serverless/typescript": "github:serverless/typescript",
+    "reflect-metadata": "^0.2.2",
+    "serverless-offline": "^13.5.0",
+    "serverless-webpack": "^5.13.0",
+    "ts-node": "^10.9.2",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "@types/node": "^20.12.11",
+    "webpack": "^5.76.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
