@@ -1,1 +1,1 @@
-export { getUser } from "./userFunctions";
+export { getUser, createUser } from "./userFunctions";

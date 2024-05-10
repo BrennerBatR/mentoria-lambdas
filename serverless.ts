@@ -27,4 +27,4 @@ async function getServerlessConfig(): Promise<AWS> {
   return aws;
 }
 
-module.exports = getServerlessConfig;
+module.exports = getServerlessConfig();

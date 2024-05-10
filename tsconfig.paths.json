@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@services/*": ["./src/services/*"],
+      "@types/*": ["./src/types/*"]
+    }
+  }
+}
