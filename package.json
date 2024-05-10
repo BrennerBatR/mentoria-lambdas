@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sls offline start --host=0.0.0.0 --stage dev --noAuth"
+    "dev": "sls offline start --host=0.0.0.0 --stage dev --noAuth",
+    "deploy": "sls deploy --stage dev"
   },
   "author": "",
   "license": "ISC",
