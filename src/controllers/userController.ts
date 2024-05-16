@@ -12,7 +12,7 @@ export class UserController {
   public async getUser(): Promise<APIGatewayProxyResult> {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Hello Worlds!" }),
+      body: JSON.stringify({ message: "Hello World!" }),
     };
   }
 
