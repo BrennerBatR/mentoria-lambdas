@@ -1,10 +1,12 @@
-import { CreateUserDto, CreateUserResponseDto } from '@types/user';
-import { Service } from 'typedi';
+import { CreateUserDto, CreateUserResponseDto } from "@types/user";
+import { Inject, Service } from "typedi";
 
-@Service('userService')
+@Service("userService")
 export class UserService {
-  public async createUser(createUserDto: CreateUserDto): Promise<CreateUserResponseDto> {
-    console.log('createUserDto', createUserDto);
+  public async createUser(
+    createUserDto: CreateUserDto
+  ): Promise<CreateUserResponseDto> {
+    console.log("createUserDto", createUserDto);
 
     const response: CreateUserResponseDto = { name: createUserDto.name };
 
