@@ -4,7 +4,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sls offline start --host=0.0.0.0 --stage dev --noAuth",
-    "deploy": "sls deploy --stage dev"
+    "deploy": "sls deploy --stage dev",
+    "lint": "npx eslint -c .eslintrc.js src/**/*.ts *.ts",
+    "lint:fix": "npx eslint -c .eslintrc.js src/**/*.ts *.ts --fix"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +25,12 @@
     "@types/aws-lambda": "^8.10.137",
     "@types/node": "^20.12.11",
     "webpack": "^5.76.1",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-node-externals": "^3.0.0",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.1"
   }
 }
