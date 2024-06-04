@@ -11,10 +11,11 @@ export class UserController {
   ) {}
 
   public async getUser(): Promise<APIGatewayProxyResult> {
+    console.log(process.env.MENTORIA_TEST);
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: 'Hello World!',
+        message: process.env.MENTORIA_TEST || 'not found',
       }),
     };
   }
